@@ -1,0 +1,33 @@
+<div>
+  Dodawanie:
+  <input #add1>
+  <input #add2>
+  <button (click)="sum(add1, add2)">Dodaj</button>
+  <textarea>{{reSum}}</textarea>
+</div>
+<div>
+  Odejmowanie:
+  <input #sub1>
+  <input #sub2>
+  <button (click)="sub(sub1, sub2)">Odejmij</button>
+  <textarea>{{reSub}}</textarea>
+</div>
+<div>
+  Mnożenie:
+  <input #mul1>
+  <input #mul2>
+  <button (click)="mul(mul1, mul2)">Pomnóż</button>
+  <textarea>{{reMul}}</textarea>
+</div>
+<div>
+  Dzielenie:
+  <input #div1>
+  <input #div2>
+  <button (click)="div(div1, div2)">Podziel</button>
+  <textarea>{{reDiv}}</textarea>
+</div>
+<div>
+  Klikanie:
+  <button (click)="addClicks()">Kliknij mnie!</button>
+  {{showClicks}}
+</div>
